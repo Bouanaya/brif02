@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+ 
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 2rem;
+}
+/* //header.logo// */
+.logo a {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.nom-logo {
+  position: relative;
+}
+.nom-logo span {
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+}
+.nom-logo .sou-logo span {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  font-size: x-small;
+}
+nav{
+    display: flex;
+    gap: 3rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+nav a button{
+    padding:8px 2rem ;
+    border-radius:8px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    
+}
+
+/* hero section */
+
+.hero-section{
+    width:100%;
+    height: 100vh;
+}
+.hero-section .hero{
+    background-image: url(../imgs/imgHome/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    padding: 5rem;
+
+
+}
+ 
+
+ 
