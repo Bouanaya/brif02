@@ -5,6 +5,9 @@
   text-decoration: none;
   list-style: none;
 }
+html{
+  font-size: 16px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -119,6 +122,7 @@ nav a button {
 .select-location , .select-propety {
   border-right: 2px solid rgba(114, 114, 114, 0.587);
   padding-right: 1rem;
+  
 }
 
 .select-search .select-location label , .select-price label {
@@ -153,10 +157,11 @@ select.sel-property {
     padding: 4px 0;
   background-color: transparent;
   color: rgba(11, 10, 10, 0.532);
-  
+
 }
 
 .select-search button {
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
