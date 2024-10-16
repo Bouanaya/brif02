@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
 }
-html{
+html {
   font-size: 16px;
 }
 .container {
@@ -18,6 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  
 }
 /* //header.logo// */
 .logo a {
@@ -55,6 +56,12 @@ nav a button {
   border: 2px solid var(--primary-color);
   background-color: transparent;
   color: var(--primary-color);
+  cursor: pointer;
+  transition: .5s;
+}
+nav a button:hover{
+  background-color: var(--primary-color);
+  color: white;
 }
 
 /* hero section */
@@ -62,9 +69,11 @@ nav a button {
 .hero-section {
   width: 100%;
   height: 100vh;
+
+  
 }
 .hero-section .hero {
-  background-image: url(../imgs/imgHome/image.png);
+  background-image: url(../imgs/imgHome/image.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,6 +103,7 @@ nav a button {
   border-radius: 8px 8px 0 0;
   border: none;
   color: var(--secondary-color);
+  cursor: pointer;
 }
 .btn-search button.RENT {
   background-color: rgba(255, 255, 255, 0.724);
@@ -119,13 +129,14 @@ nav a button {
   display: flex;
   gap: 2rem;
 }
-.select-location , .select-propety {
+.select-location,
+.select-propety {
   border-right: 2px solid rgba(114, 114, 114, 0.587);
   padding-right: 1rem;
-  
 }
 
-.select-search .select-location label , .select-price label {
+.select-search .select-location label,
+.select-price label {
   color: black;
   font-size: 1rem;
 }
@@ -133,35 +144,189 @@ nav a button {
   display: flex;
   align-items: center;
 }
-.select-search .select-location input , .select-price input {
+.select-search .select-location input,
+.select-price input {
   border: none;
   outline: none;
   margin-top: 6px;
   padding: 4px 0;
   background-color: transparent;
 }
-.property{
-    display: flex;
-    align-items: center;
+.property {
+  display: flex;
+  align-items: center;
 }
-.select-location label{
-    color: black;
-    font-size: 1rem;
-    
-
+.select-location label {
+  color: black;
+  font-size: 1rem;
 }
 select.sel-property {
-    outline: none;
-    border: none;
-    margin-top: 6px;
-    padding: 4px 0;
+  outline: none;
+  border: none;
+  margin-top: 6px;
+  padding: 4px 0;
   background-color: transparent;
   color: rgba(11, 10, 10, 0.532);
-
 }
 
 .select-search button {
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
+
+/* ///countries */
+
+.countries{
+  padding: 3.5rem 0;
+  
+
+}
+.countries h1{
+  text-align: center;
+  font-size: 2.5rem;
+} 
+.container .box-countries{
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.container .box-countries .box1{
+  position: relative;
+  cursor: pointer;
+  transition: .5s;
+}
+ 
+.container .box-countries .box1 .text-box{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+} 
+.container .box-countries .box1 .text-box h2{
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+/* .Recently{
+
+} */
+ .Recently{
+  padding-bottom:3rem ;
+ }
+.Recently .Recently-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Recently .boxs-Recently{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  margin-top: 2.5rem;
+  gap: 2rem;
+  
+}
+.Recently .boxs-Recently .box1-Recently{
+  display: flex;
+  border: 1px solid gray;
+  border-radius:1.5rem ;
+  padding: 1.2rem;
+  gap:1.5rem;
+  transition: .5s;
+
+}
+.Recently .boxs-Recently .box1-Recently:hover{
+  border: 1px solid var(--primary-color);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+ 
+.Box-content {
+  width: 100%;
+}
+.Box-content h3{
+  font-size:1.7rem;
+}
+.Box-content nav{
+  display: flex;
+  margin-top: 1rem;
+  color: var(--secondary-color);
+  width: 100%;
+  justify-content: space-between;
+}
+.Box-content .price{
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.Box-content .price p{
+  color:var(--secondary-color);
+}
+.Box-content .price button{
+  background-color: #8F90A6;
+  padding:0.5rem 1.3rem ;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: .5s;
+}
+.Box-content .price button:hover{
+background-color: #8f90a6c2;
+}
+.Real{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+}
+.Real-centent{
+ 
+  background: linear-gradient(to top, #E2F1F6, #D6EAF1, #C2DEEC);  
+  border-radius: 3rem 0 0 3rem;
+  padding: 5rem ;
+}
+.Real-centent h1{
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.Real-centent p{
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom:3rem ;
+}
+.Real-centent button{
+  padding:0.7rem 3rem ;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: .5s;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--primary-color);
+
+}
+.Real-centent button:hover{
+  background-color: #C2DEEC;
+  color: var(--primary-color);
+}
+
+.Real-img img{
+  border-radius: 0 3rem  3rem 0;
+  height: 100%;
+  width: 100%;
+}
+footer{
+  padding: 2rem;
+}
+.footer{
+ display: grid;
+ grid-template-columns: repeat(6 , 1fr);
+ gap: 1.5rem;
+}
+ 
+
+ 
