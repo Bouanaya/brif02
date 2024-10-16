@@ -1,50 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="logoipsum">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="logoipsum" />
     <title>logoipsum</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/variables.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+  </head>
+  <body>
     <div class="container">
-    <header>
+      <header>
         <div class="logo">
-        <a href="index.html">
-            <img src="./icons/iconHome/Logo.svg" aria-label="logo" alt="logo">
+          <a href="index.html">
+            <img src="./icons/iconHome/Logo.svg" aria-label="logo" alt="logo" />
             <div class="nom-logo">
-                <span>logoipsum</span>
-                <div class="sou-logo">
-                    <span>.com</span>
-                </div>
-        </div>
-        </a>
-    </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="./Page/properties.html">PROPERTIES</a></li>
-                <li><a href="./Page/blog.html">BLOG</a></li>
-                <li><a href="./Page/contact.html">CONTCT</a></li>
-            </ul>
-            <a href="./Page/login.html"><button>LOG IN</button></a>
-            
-            
-        </nav>
-    </header>
-    <section class="hero-section">
-        <div class="hero ">
-            <div class="hero-content">
-                <h1>Easy way to find a <br>
-                    perfect property</h1>
-                    <p>We provide a complete service for the sale,
-                        purchase or rental of real estate.</p>
+              <span>logoipsum</span>
+              <div class="sou-logo">
+                <span>.com</span>
+              </div>
             </div>
+          </a>
         </div>
-    </section>
-</div>
-</body>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="./Page/properties.html">PROPERTIES</a></li>
+            <li><a href="./Page/blog.html">BLOG</a></li>
+            <li><a href="./Page/contact.html">CONTCT</a></li>
+          </ul>
+          <a href="./Page/login.html"><button>LOG IN</button></a>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <div class="hero">
+          <div class="hero-content">
+            <h1>
+              Easy way to find a <br />
+              perfect property
+            </h1>
+            <p>
+              We provide a complete service for the sale,<br />
+              purchase or rental of real estate.
+            </p>
+          </div>
+          <div class="searchbar">
+            <div class="btn-search">
+              <button class="RENT">RENT</button>
+              <button>BUY</button>
+              <button>SELL</button>
+            </div>
+            <div class="search">
+              <div class="blur"></div>
+              <div class="select-search">
+                <div class="select-location">
+                  <label for="City">localisation</label><br />
+                  <div class="City-location">
+                    <input
+                      id="City"
+                      type="text"
+                      placeholder="Select your City"
+                    />
+                    <img src="./icons/iconHome/location.svg" alt="" />
+                  </div>
+                </div>
+                <div class="select-propety">
+                  <label for="property"> Property Type</label><br />
+                  <div class="property">
+                    <select name="property" id="property" class="sel-property">
+                      <option value="Property">Choose Property Type</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="select-price">
+                  <label for="price">Price Range</label><br />
+                  <div class="price">
+                    <input type="text" placeholder="Choose Price Range" />
+                  </div>
+                </div>
+                <button><img src="./icons/iconHome/Search.svg" alt=""></button>
+                 
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
