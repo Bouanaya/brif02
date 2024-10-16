@@ -327,6 +327,60 @@ footer{
  grid-template-columns: repeat(6 , 1fr);
  gap: 1.5rem;
 }
+.footer-content{
+grid-column-start: 1;
+grid-column-end: 3;
+}
+.footer-content p{
+  color: var(--secondary-color);
+}
+.footer-content .logo {
+  margin-bottom: 1rem;
+}
+.footer-content .midia{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.tours h3 {
+ margin-bottom:1.5rem ;
+ 
+
+}
+.tours ul li{
+margin-bottom: 1rem; 
+}
+.Subscribe{
+grid-column: 5/7;
+padding: 0 1rem;
+ 
+}
+.Subscribe .Subscribe-inp{
+  margin-top: 1rem;
+   
+  
+}
+.inp{
+  padding: 0.6rem;
+  border: 1px solid var(--secondary-color);
+  border-radius:0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.inp input{
+  border: none;
+  outline: none;
+}
+.inp button{
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius:100%;
+  cursor: pointer;
+}
  
 
  
