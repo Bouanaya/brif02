@@ -212,7 +212,7 @@ text-transform: uppercase;
 
 } */
  .Recently{
-  padding-bottom:3rem ;
+  padding-bottom:3.5rem ;
  }
 .Recently .Recently-bar{
   display: flex;
@@ -276,11 +276,17 @@ text-transform: uppercase;
 .Box-content .price button:hover{
 background-color: #8f90a6c2;
 }
-.Real{
+.Real ,.hero-proprty{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 3rem;
   margin-bottom: 3rem;
+}
+.hero-proprty .pro-centent {
+  background: linear-gradient(to top,#96d3dc7e, #badce2,  #badce2);  
+  border-radius: 3rem 0 0 3rem;
+  padding: 5rem ;
+
 }
 .Real-centent{
  
@@ -288,9 +294,50 @@ background-color: #8f90a6c2;
   border-radius: 3rem 0 0 3rem;
   padding: 5rem ;
 }
-.Real-centent h1{
+.Real-centent h1 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
+}
+.hero-proprty .pro-centent h1{
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.hero-proprty .pro-centent p{
+  margin: 1rem 0;
+}
+.pro-centent .inp-proprety{
+  display: flex;
+  border: 1px solid gray;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 0.1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+.inp-pro{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.inp-pro img{
+  margin-left: 0.3rem;
+}
+.inp-pro input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem;
+}
+.inp-proprety button{
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color:#10B981;
+  color: white;
 }
 .Real-centent p{
   color: var(--secondary-color);
@@ -363,7 +410,7 @@ padding: 0 1rem;
 }
 .inp{
   padding: 0.6rem;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid rgba(128, 128, 128, 0.635);
   border-radius:0.5rem;
   margin-top: 1rem;
   display: flex;
