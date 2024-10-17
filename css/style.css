@@ -331,13 +331,20 @@ background-color: #8f90a6c2;
   padding: 1rem;
 }
 .inp-proprety button{
-  padding: 0.7rem 1.5rem;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
   border-radius: 2rem;
   border: none;
   display: flex;
   align-items: center;
   background-color:#10B981;
   color: white;
+  justify-content: center;
+  transition: .5s;
+}
+.inp-proprety button:hover{
+  background-color: #1f8765;
+
 }
 .Real-centent p{
   color: var(--secondary-color);
@@ -428,6 +435,168 @@ padding: 0 1rem;
   border-radius:100%;
   cursor: pointer;
 }
+
+/* /// page property/// */
+ 
+.pro h1{
+  font-size: 2rem;
+}
+.pro-h1{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.pro nav{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+.pro nav button{
+  display: flex;
+  align-items: center;
+  color: #8F90A6;
+ background-color: transparent;
+  border-radius:1rem;
+  padding: 0.4rem 0.8rem;
+  border:1px solid gray;
+  cursor: pointer;
+  transition:.5s;
+}
+.pro nav button:hover{
+ background-color: #D1FAE5;
+ 
+}
+
+.pro nav button.active{
+  display: flex;
+  align-items: center;
+  background-color:#D1FAE5;
+  border-radius:1rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+}
+.pro .cards{
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3,1fr);
+ justify-content: center;
+ gap: 2.5rem;
+  
+}
+.info-per p{
+  font-size: small;
+
+}
+
+ 
+ 
+.img-card{
+  position: relative;
+ 
+  margin-bottom: 1rem;
+
+}
+.img-card button.red{
+  position: absolute;
+  bottom: 1.5rem;
+  left:1.5rem;
+  background-color:#FEE2E2;
+  display: flex;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  gap: 0.3rem;
+  align-items: center;
+
+}
+.img-card button.gren{
+  position: absolute;
+  bottom: 1.5rem;
+  left:1.5rem;
+  background-color:#D1FAE5;
+  display: flex;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  gap: 0.3rem;
+  align-items: center;
+
+}
+.img-card button.blue{
+  position: absolute;
+  bottom: 1.5rem;
+  left:1.5rem;
+  background-color:#DBEAFE;
+  display: flex;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  gap: 0.3rem;
+  align-items: center;
+
+}
+ 
+.card1 h2{
+  
+  font-size:1.5rem;
+}
+.card1 h3{
+  color:#3C4563;
+  font-size: 1.rem;
+}
+.card1 .card-per {
+  margin-top: 1rem;
+  display: flex;
+  align-items:center ;
+  gap: 1.5rem;
+}
+.card1 .card-per img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.pro-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  margin: 3rem 0;
+
+}
+.pro-btn button.active{
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  background-color: #10B981;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  
+}
+.pro-btn button{
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  background-color:#E0E3EB;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  
+}
+ 
+
+
+
  
 
  
