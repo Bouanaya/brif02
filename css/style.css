@@ -593,9 +593,117 @@ padding: 0 1rem;
   color: gray;
   
 }
+.blog h1 {
+  text-align: center;
+  font-size: xx-large;
+  white-space: 0.5rem;
+  
+  
+}
+.blog {
+  margin:2rem 0;
+}
+
+.box-blog{
+  display: flex;
  
+  justify-content: center;
+  width: 100%;
+  
+}
+.box-content {
+  position: relative;
+  width: 80%;
+}
+.box-content .box.red  {
+  position: absolute;
+  top: 15%;
+  height: 75%;
+  width:75% ;
+  right: 0;
+  background-color: #E2CFD3;
+  padding: 3rem;
+  border-radius: 2rem 0 0 2rem;
 
+}
+.box-content .box  {
+  position: absolute;
+  top: 15%;
+  height: 75%;
+  width:75% ;
+  right: 0;
+  background-color: #DFF0F7;
+  padding: 3rem;
+  border-radius: 2rem 0 0 2rem;
 
+}
+.box a{
+  color: #32A570;
+  margin-bottom: 1rem;
+}
+.box-text{
+  margin-top: 1rem;
+}
+.box-text a{
+  color: #3C4563;
+  margin-top: 2rem;
+}
+ 
+.box1-content{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.box1-content .box1{
+  width: 80%;
+  position:relative;
+  
+}
+.box-hed{
+  position: absolute;
+  top: 15%;
+  height: 75%;
+  background-color: #D1FAE5;
+  padding: 3rem;
+  border-radius:  0 2rem 2rem 0 ;
+  left: 0;
+  width: 80%;
+}
+.blog-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  margin: 3rem 0;
+
+}
+.blog-btn button.active{
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  background-color: #EC3397;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  
+}
+.blog-btn button{
+width: 2rem;
+height: 2rem;
+padding: 1rem;
+background-color:#E0E3EB;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+cursor: pointer;
+color: gray;
+}
 
  
 
